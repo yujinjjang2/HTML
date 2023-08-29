@@ -9,10 +9,12 @@ div {
 .cls1 {
     /* 배경색만 덮어씌워짐. */
     background-color: green;
+    /* font-size: large; */
 }
 
 .cls1 {
     background-color: yellow;
+    /* font-size: small; */
     /* 동일한 우선순위에선 마지막에 작성된 설정값이 적용됨 */
 }
 
