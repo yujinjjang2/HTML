@@ -12,89 +12,244 @@ body {
     border: 1px solid black;
 } */
 
-.nav {
-    width: 1800px;
+/* header */
+header {
     height: 50px;
 
     display: flex;
-    justify-content: center;
 }
 
-.nav-section1 {
-    flex-basis: 15%;
-    padding: 0 20px;
+header > section:nth-child(1),
+header > section:nth-child(3) {
+    width: 15%;
+}
 
+header > section:nth-child(2) {
+    width: 70%;
+}
+
+/* header css */
+.header-section1 {
     display: flex;
+    align-items: center;
 }
 
-.nav-section3 {
-    flex-basis: 15%;
-    justify-content: flex-end;
-}
-
-.nav-section2 {
-    flex-basis: 70%;
-}
-
-#hamburger-button {
-    font-size: 20px;
+#hamburgur-btn {
+    font-size: 25px;
     border: none;
     background-color: transparent;
     color: gray;
+    margin-left: 20px;
 }
 
-#hamburger-button:hover {
-    cursor: pointer;
-    background-color: #ddd;
-    border-radius: 50%;
-}
-
-#logo {
-    width: 100px;
-    height: 100%;
-}
-
-#search-section {
-    width: 50px;
-}
-
-#search-form {
-    border: 1px solid gray;
-}
-
-#search-click,
-#mic {
-    border: 1px solid white;
-    border-radius: 50%;
-    font-size: 20px;
-    background-color: #ddd;
-    cursor: pointer;
-}
-
-.nav-section3 button {
-    border: none;
-    font-size: 15px;
-    background-color: transparent;
-    padding: 15px 25px;
-}
-
-.nav-section3 button:hover {
-    cursor: pointer;
-    background-color: #ddd;
-    border-radius: 50%;
-}
-
-.main {
-    width: 1800px;
+.header-section1 img {
+    width: 120px;
     height: 50px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-area fieldset {
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 0;
+    padding: 2px;
 
     display: flex;
 }
 
-.iframe {
-    width: 1000px;
-    height: 600px;
+#query {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    width: 500px;
 }
+
+#search-btn {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: gray;
+    border: none;
+    background-color: transparent;
+    margin-left: 55%;
+}
+
+#mic-btn {
+    margin-left: 5%;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-section3 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    align-items: center;
+}
+
+#video, #alarm, #profile {
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* main */
+main {
+    height: 800px;
+
+    display: flex;
+    padding: 50px;
+}
+
+main > section:nth-child(1) {
+    width: 80%;
+}
+
+main > section:nth-child(2) {
+    width: 20%;
+}
+
+.main-right-top {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.main-right-center {
+    width: 100%;
+    height: 10%;
+}
+
+.main-right-bottom {
+    width: 100%;
+    height: 70%;
+}
+
+.main-right-top-top {
+    height: 50%;
+}
+
+.main-right-top-bottom {
+    height: 50%;
+    display: flex;
+}
+
+.main-right-top-bottom-left {
+    width: 15%;
+}
+
+.main-right-top-bottom-center {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.main-right-top-bottom-right {
+    width: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-right-center-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.main-right-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-right-bottom > section {
+    width: 100%;
+    height: 20%;
+}
+
+.main-right-bottom-1,
+.main-right-bottom-2,
+.main-right-bottom-3,
+.main-right-bottom-4,
+.main-right-bottom-5 {
+    display: flex;
+}
+
+.left-one, .left-two, .left-three, .left-four, .left-five {
+    width: 40%;
+}
+
+.right-one, .right-two, .right-three, .right-four, .right-five {
+    width: 60%;
+}
+
+.right-one-top, .right-one-bottom, 
+.right-two-top, .right-two-bottom,
+.right-three-top, .right-three-bottom,
+.right-four-top, .right-four-bottom,
+.right-five-top, .right-five-bottom {
+    width: 100%;
+    height: 50%;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* main css */
+.main-right-top-bottom-right > button {
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.li-1, .li-2, .li-3 {
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.li-1 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.li-4 > button {
+    margin-right: 10px;
+    margin-top: 3px;
+    font-size: 1.2em;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+
+
+
 
 
 

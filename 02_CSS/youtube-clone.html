@@ -9,72 +9,128 @@
     <script src="https://kit.fontawesome.com/f821b57119.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <nav class="nav">
-        <section class="nav-section1">
-            <button class="fa-solid fa-bars" id="hamburger-button"></button>
-            <a href="#"><img src="../images/youtube-logo.png" id="logo"></a>
+    <header>
+        <section class="header-section1">
+            <button class="fa-solid fa-bars" id="hamburgur-btn"></button>
+            <a><img src="../images/youtube-logo.png"></a>
         </section>
-        <section class="nav-section2">
-            <fieldset>
-                <section class="search-section">
-                    <form action="#" id="search-form">
-                        <input type="search" id="search" name="search" placeholder="Search">
-                        <button class="fa-solid fa-magnifying-glass" id="search-click"></button>
-                        <button class="fa-solid fa-microphone" id="mic"></button>
-                    </form>
+        <section class="search-area">
+            <form action="#" name="search-form">
+                <fieldset>
+                    <input type="search" id="query" name="query"
+                        autocomplete="off" placeholder="Search">
+                    <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                    <button class="fa-solid fa-microphone" id="mic-btn"></button>
+                </fieldset>
+            </form>
+        </section>
+        <section class="header-section3">
+            <button class="fa-solid fa-video" id="video"></button>
+            <button class="fa-regular fa-bell" id="alarm"></button>
+            <button class="fa-solid fa-user" id="profile"></button>
+        </section>
+    </header>
+
+    <main>
+        <!-- 동영상 iframe -->
+        <section>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vwpJt03h7RM?si=D7-V_abmsinCzYnE" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </section>
+        <!-- 동영상 우측 목록 -->
+        <section style="margin-left: 20px;">
+            <!-- 동영상 우측 첫번째 배너 -->
+            <section class="main-right-top">
+                <section class="main-right-top-top">
+                    <img src="../images/main-right-top-banner.jpg" width="100%" height="100%"> 
                 </section>
-            </fieldset>
-        </section>
-        <section class="nav-section3">
-            <button class="fa-solid fa-video"></button>  
-            <button class="fa-regular fa-bell"></button>  
-            <button class="fa-solid fa-user"></button>  
-        </section>
-    </nav>
-
-    <main class="main">
-        <section class=".iframe">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/j56DQV7fNsc?si=DHM_K4c94UtQ1gSO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
-        <section class="main-right">
-            <section>
-                <section><img src=""></section>
-                <section>
-                    <section><img src=""></section>
-                    <section>
-                        <section>New 허브캔디</section>
-                        <section><strong>Ad</strong><a href="brand.naver.com/marschoco/prod">brand.naver.com/marschoco/prod</a></section>
+                <section class="main-right-top-bottom">
+                    <section class="main-right-top-bottom-left">
+                        <img src="../images/umbrella.jpg" width="100%" height="100%">
                     </section>
-                    <section>
-                        <button>구매하기</button>
+                    <section class="main-right-top-bottom-center">
+                        <section>나은이 후원하기</section>
+                        <section><strong>Ad</strong> childfund.or.kr</section>
+                    </section>
+                    <section class="main-right-top-bottom-right">
+                        <button>자세히보기</button>
                     </section>
                 </section>
             </section>
-            <section>
-                <ul>
-                    <li>All</li>
-                    <li>From 키스미 KISSME</li>
-                    <li>Beauty</li>
-                    <li>Related</li>
+
+            <!-- 동영상 우측 두번째 버튼 -->
+            <section class="main-right-center">
+                <ul class="main-right-center-ul">
+                    <li class="li-1">All</li>
+                    <li class="li-2"><strong>From</strong> 리쥬라이크 <strong>LIJULIKE</strong></li>
+                    <li class="li-3"><strong>Related</strong></li>
+                    <li class="li-4"><button>></button></li>
                 </ul>
-                <button></button>
             </section>
-            <section>
-                <section>
-                    <a href=""><img></a>
-                </section>
-                <section>
-                    <section>
-                        Google, YouTube 광고 60만원 광고비 지원
-                        <button></button>
+
+            <!-- 동영상 우측 세번째 영상들 -->
+            <section class="main-right-bottom">
+                <section class="main-right-bottom-1">
+                    <section class="left-one">
+                            <iframe width="100%" height="90%" src="https://www.youtube.com/embed/NPJVff48Mc8?si=jcgJ8gBY5_Hq5lYK" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            </iframe>
                     </section>
-                    <section>Google Ads의 자동화 솔루션으로 효율적으로 운영하고 보다 빠르게 더 나은 결과를 만드세요.</section>
-                    <section><Strong>Ad</Strong> Google Ads</section>
-                    <button>자세히 알아보기<img src=""></button>
+                    <section class="right-one">
+                        <section class="right-one-top">[VLOG] 대체 너 왜 안 자니..? 본격 육아 시작!제대로 멘붕 온</section>
+                        <section class="right-one-bottom">리쥬라이크 LIJULIKE<br>
+                            1.3M views 4 months ago</section>
+                    </section>
+                </section>
+                <section class="main-right-bottom-2">
+                    <section class="left-two">
+                        <iframe width="100%" height="90%" src="https://www.youtube.com/embed/HeNqg4vO6Rs?si=_4_B3BzO8Ba9uM1s" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </section>
+                    <section class="right-two">
+                        <section class="right-two-top">[#엠뚜루마뚜루] 현무의 부캐 생성은 아직도 현재 진행 중</section>
+                        <section class="right-two-bottom">엠뚜루마뚜루 : MBC 공식 종합 채널<br>
+                            1.8M views 5 months ago</section>
+                    </section>
+                </section>
+                <section class="main-right-bottom-3">
+                    <section class="left-three">
+                        <iframe width="100%" height="90%" src="https://www.youtube.com/embed/ekvvPsfj6n0?si=OJakC8WhICp9IviB" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>    
+                        </iframe>
+                    </section>
+                    <section class="right-three">
+                        <section class="right-three-top">[미도극장] | 미도네 코스프레 샵</section>
+                        <section class="right-three-bottom">Ripple_S<br>
+                            1.4K views 1 hour ago</section>
+                    </section>
+                </section>
+                <section class="main-right-bottom-4">
+                    <section class="left-four">
+                        <iframe width="100%" height="90%" src="https://www.youtube.com/embed/vwpJt03h7RM?si=xsYTyWf7joF16OKX" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </section>
+                    <section class="right-four">
+                        <section class="right-four-top">Mix - 리쥬라이크 LIJULIKE</section>
+                        <section class="right-four-bottom">More from this channel for you</section>
+                    </section>
+                </section>
+                <section class="main-right-bottom-5">
+                    <section class="left-five">
+                        <iframe width="100%" height="90%" src="https://www.youtube.com/embed/wYkGQYsXPjI?si=4ErNoVp_KNPqDZUO" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </section>
+                    <section class="right-five">
+                        <section class="right-five-top">미국에서 상봉하자마자 오열하는 쿨 유리와 이지혜 여행vlog</section>
+                        <section class="right-five-bottom">밉지않은 관종언니<br>
+                            43K views 2 hours ago</section>
+                    </section>
                 </section>
             </section>
-            <section><a><img src=""></a></section>
         </section>
     </main>
 </body>

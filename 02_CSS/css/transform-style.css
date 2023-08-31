@@ -107,7 +107,7 @@ img {
 .test3 {
     transition-duration: 3s;
 
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
     /* ease(기본값) : 천천히-빨리-천천히 / ease-in / ease-out / linear: 등속 */
 }
 
