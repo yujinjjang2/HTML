@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 영역 나누는 것 border줘서 확인한 뒤에 마지막에 삭제하기 -> 보기 편함 */
+/* div,section {
+    border: 1px solid black;
+} */
+
+.nav {
+    width: 1800px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-section1 {
+    flex-basis: 15%;
+    padding: 0 20px;
+
+    display: flex;
+}
+
+.nav-section3 {
+    flex-basis: 15%;
+    justify-content: flex-end;
+}
+
+.nav-section2 {
+    flex-basis: 70%;
+}
+
+#hamburger-button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+
+#hamburger-button:hover {
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+#logo {
+    width: 100px;
+    height: 100%;
+}
+
+#search-section {
+    width: 50px;
+}
+
+#search-form {
+    border: 1px solid gray;
+}
+
+#search-click,
+#mic {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.nav-section3 button {
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 15px 25px;
+}
+
+.nav-section3 button:hover {
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.main {
+    width: 1800px;
+    height: 50px;
+
+    display: flex;
+}
+
+.iframe {
+    width: 1000px;
+    height: 600px;
+}
+
+
+
+
+

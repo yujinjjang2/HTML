@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+#weight-test > li {
+    font-size: 34px;
+}
+
+#weight-test > li:nth-child(1) { font-weight: 600; }
+#weight-test > li:nth-child(2) { font-weight: bold; }
+/* bold : 700이기 때문에 위글자보다 조금 더 굵음 */
+#weight-test > li:nth-child(3) { font-weight: bolder; }
+/* bolder : normal보다 굵음 */
+#weight-test > li:nth-child(4) { font-weight: lighter; }
+/* lighter : normal보다 얇음 */
+#weight-test > li:nth-child(5) { 
+    font-weight: normal;
+
+    /* 글꼴의 모양을 지정하는 속성 */
+    font-style: italic; 
+}
+
+
+.cls > li { font-size: 24px; }
+
+#family-test1 > li:nth-child(1) {
+    font-family: '궁서'; /* 설치된 폰트인 경우 */
+}
+
+#family-test1 > li:nth-child(2) {
+    font-family: '배달의민족체';
+    /* 없는 폰트인 경우 기본폰트로 설정됨 */
+}
+
+#family-test1 > li:nth-child(3) {
+    font-family: '배달의민족체', '굴림체';
+    /* 배달의민족체 없을 경우 굴림체 사용하겠다!
+        여러 개 나열 가능
+    */
+}
+
+/* 웹폰트 */
+#family-test2 > li:nth-child(1) {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* @import는 css 파일 제일 상단에 작성해야 한다. */
+#family-test2 > li:nth-child(2) {
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+/* font-face는 최상단 아니여도 됨. */
+@font-face {
+    font-family: 'iceJaram-Rg'; /* 해당 문구 css에 작성 */
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#family-test2 > li:nth-child(3) {
+    font-family: 'iceJaram-Rg';
+}
+
