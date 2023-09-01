@@ -1,0 +1,716 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 영역 나누는 것 border줘서 확인한 뒤에 마지막에 삭제하기 -> 보기 편함 */
+/* div,section {
+    border: 1px solid black;
+} */
+
+/* header */
+header {
+    height: 50px;
+
+    display: flex;
+}
+
+header > section:nth-child(1),
+header > section:nth-child(3) {
+    width: 15%;
+}
+
+header > section:nth-child(2) {
+    width: 70%;
+}
+
+/* header css */
+.header-section1 {
+    display: flex;
+    align-items: center;
+}
+
+#hamburgur-btn {
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    margin-left: 20px;
+}
+
+#hamburgur-btn:hover {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.header-section1 img {
+    width: 120px;
+    height: 50px;
+}
+
+.header-section1 img:hover {
+    cursor: pointer;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-area fieldset {
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 0;
+    padding: 2px;
+
+    display: flex;
+}
+
+#query {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    width: 500px;
+}
+
+#search-btn {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: gray;
+    border: none;
+    background-color: transparent;
+    margin-left: 55%;
+}
+
+#mic-btn {
+    margin-left: 5%;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-section3 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    align-items: center;
+}
+
+#video, #alarm, #profile {
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#video:hover, #alarm:hover {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 50%;
+}   
+
+/* main */
+main {
+    height: 800px;
+
+    display: flex;
+    padding: 50px;
+}
+
+main > section:nth-child(1) {
+    width: 80%;
+}
+
+main > section:nth-child(2) {
+    width: 20%;
+}
+
+.main-right-top {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.main-right-center {
+    width: 100%;
+    height: 10%;
+}
+
+.main-right-bottom {
+    width: 100%;
+    height: 70%;
+}
+
+.main-right-top-top {
+    height: 50%;
+}
+
+.main-right-top-bottom {
+    height: 50%;
+    display: flex;
+}
+
+.main-right-top-bottom-left {
+    width: 15%;
+}
+
+.main-right-top-bottom-center {
+    width: 60%;
+    padding-left: 10px;
+}
+
+.main-right-top-bottom-right {
+    width: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-right-center-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.main-right-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-right-bottom > section {
+    width: 100%;
+    height: 20%;
+}
+
+.main-right-bottom-1,
+.main-right-bottom-2,
+.main-right-bottom-3,
+.main-right-bottom-4,
+.main-right-bottom-5 {
+    display: flex;
+}
+
+.left-one, .left-two, .left-three, .left-four, .left-five {
+    width: 40%;
+}
+
+.right-one, .right-two, .right-three, .right-four, .right-five {
+    width: 60%;
+}
+
+.right-one-top, .right-one-bottom, 
+.right-two-top, .right-two-bottom,
+.right-three-top, .right-three-bottom,
+.right-four-top, .right-four-bottom,
+.right-five-top, .right-five-bottom {
+    width: 100%;
+    height: 50%;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* main css */
+.main-right-top-bottom-right > button {
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.li-1, .li-2, .li-3 {
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.li-1 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.li-4 > button {
+    margin-right: 10px;
+    margin-top: 3px;
+    font-size: 1.2em;
+    border: none;
+    background-color: transparent;
+}
+
+/* main 두번째 */
+
+/* main 두번째 왼쪽 크기 설정 */
+.main2 {
+    height: 400px;
+
+    display: flex;
+    padding: 0 50px;
+}
+
+.main2-left {
+    width: 80%;
+}
+
+.main2-right {
+    width: 20%;
+}
+
+.main2-left-one,
+.main2-left-four,
+.main2-left-five {
+    width: 100%;
+    height: 15%;
+}
+
+.main2-left-two {
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+}
+
+.main2-left-three {
+    width: 100%;
+    height: 30%;
+}
+
+.main2-left-four,
+.main2-left-five {
+    display: flex;
+}
+
+.main2-left-two-one {
+    width: 5%;
+    height: 100%;
+}
+
+.main2-left-two-two,
+.main2-left-two-three {
+    width: 15%;
+    height: 100%;
+}
+
+.main2-left-two-four {
+    width: 65%;
+    height: 100%;
+}
+
+.main2-left-four-left {
+    width: 15%;
+    height: 100%;
+}
+
+.main2-left-four-right {
+    width: 85%;
+    height: 100%;
+}
+
+.main2-left-five-left {
+    width: 5%;
+    height: 100%;
+}
+
+.main2-left-five-right {
+    width: 95%;
+    height: 100%;
+}
+
+/* main 두번째 왼쪽 css */
+.main2-left-one {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.img-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    border: none;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-image {
+    width: 100%;
+    height: 100%;
+}
+
+#profile-image:hover {
+    cursor: pointer;
+}
+
+.main2-left-two-two {
+    padding-left: 3px;
+    padding: 0;
+}
+
+.main2-left-two-two:hover {
+    cursor: pointer;
+}
+
+.main2-left-two-three {
+    padding-top: 10px;
+    padding-left: 15px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 30px;
+    width: 180px;
+    height: 40px;
+}
+
+.main2-left-two-three:hover {
+    cursor: pointer;
+}
+
+.main2-left-two-three > #alarm2,
+.main2-left-two-three > #check {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.main2-left-two-four-ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5px;
+}
+
+#thumbs-up-btn,
+#thumbs-down-btn,
+#share-btn,
+#download-btn,
+#heart-btn,
+#scissors-btn,
+#list-btn {
+    border: none;
+    font-size: 0.8em;
+    background-color: transparent;
+    padding-top: 5px;
+}
+
+.main2-left-two-four-ul1,
+.main2-left-two-four-ul2,
+.main2-left-two-four-ul3,
+.main2-left-two-four-ul4,
+.main2-left-two-four-ul5,
+.main2-left-two-four-ul6 {
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 30px;
+    margin: 0 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main2-left-two-four-ul1:hover,
+.main2-left-two-four-ul2:hover,
+.main2-left-two-four-ul3:hover,
+.main2-left-two-four-ul4:hover,
+.main2-left-two-four-ul5:hover {
+    cursor: pointer;
+}
+
+#list-btn {
+    cursor: pointer;
+}
+
+.main2-left-three {
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 98%;
+}
+
+.main2-left-three:hover {
+    cursor: pointer;
+}
+
+.main2-left-four-left {
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.main2-left-four-right {
+    padding-top: 13px;
+    cursor: pointer;
+}
+
+#hamburgur-btn2 {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.img-wrapper2 {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 70%;
+    border: none;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile2-image {
+    width: 100%;
+    height: 100%;
+}
+
+#comment {
+    border: none;
+    font-size: 15px;
+}
+
+#comment:focus {
+    outline: none;
+}
+
+/* main 두번째 오른쪽 크기 설정 */
+.main2-right > section {
+    width: 100%;
+    height: calc(100%/3);
+
+    display: flex;
+}
+
+.main2-right-one-left,
+.main2-right-two-left,
+.main2-right-three-left {
+    width: 40%;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.main2-right-one-right,
+.main2-right-two-right,
+.main2-right-three-right {
+    width: 60%;
+    height: 100%;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main2-right-one-right-top,
+.main2-right-two-right-top,
+.main2-right-three-right-top,
+.main2-right-one-right-bottom,
+.main2-right-two-right-bottom,
+.main2-right-three-right-bottom {
+    width: 100%;
+    height: 50%;
+
+    font-size: 12px;
+}
+
+/* main 세번째 */
+
+/* main 세번째 틀 크기 설정 */
+
+.main3 {
+    height: 400px;
+
+    display: flex;
+    padding: 0 50px;
+}
+
+.main3-left {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main3-right {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main3-left1,
+.main3-left2,
+.main3-left3 {
+    width: 100%;
+    height: calc(100%/3);
+
+    display: flex;
+}
+
+.main3-left1-left,
+.main3-left2-left,
+.main3-left3-left {
+    width: 5%;
+    height: 100%;
+}
+
+.main3-left1-right,
+.main3-left2-right,
+.main3-left3-right {
+    width: 95%;
+    height: 100%;
+}
+
+.main3-left1-right-t,
+.main3-left1-right-c,
+.main3-left1-right-b,
+.main3-left2-right-t,
+.main3-left2-right-c,
+.main3-left2-right-b,
+.main3-left3-right-t,
+.main3-left3-right-c,
+.main3-left3-right-b {
+    width: 100%;
+    height: calc(100%/3);
+}
+
+.main3-left1-right,
+.main3-left2-right,
+.main3-left3-right {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.main3-left1-right-b > button,
+.main3-left2-right-b > button,
+.main3-left3-right-b > button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.main3-left1-right-b > button:hover,
+.main3-left2-right-b > button:hover,
+.main3-left3-right-b > button:hover {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.img-wrapper3,
+.img-wrapper4,
+.img-wrapper5 {
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    border: none;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#people1-img,
+#people2-img,
+#people3-img {
+    width: 100%;
+    height: 100%;
+}
+
+#people1-img:hover,
+#people2-img:hover,
+#people3-img:hover {
+    cursor: pointer;
+}
+
+.main3-right1,
+.main3-right2,
+.main3-right3 {
+    width: 100%;
+    height: calc(100%/3);
+
+    display: flex;
+}
+
+.main3-right1-l,
+.main3-right2-l,
+.main3-right3-l {
+    width: 40%;
+    height: 100%;
+    padding-left: 5px;
+}
+
+.main3-right1-r,
+.main3-right2-r,
+.main3-right3-r {
+    width: 60%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.main3-right1-r-t,
+.main3-right1-r-b,
+.main3-right2-r-t,
+.main3-right2-r-b,
+.main3-right3-r-t,
+.main3-right3-r-b {
+    width: 100%;
+    height: 50%;
+
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* 어떻게 하는거지..?? */
+/* 반응형 모바일 기준 */
+/* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용해라 */
+@media all and (max-width:767px) {
+
+    main {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+
+
