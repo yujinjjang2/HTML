@@ -1,0 +1,649 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* div,section {
+    border: 1px solid black;
+} */
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+nav > section:nth-child(1),
+nav > section:nth-child(3) {
+    width: 20%;
+}
+
+nav > section:nth-child(2) {
+    width: 60%;
+}
+
+.nav1 {
+    display: flex;
+    padding-left: 30px;
+}
+
+/* nav1 */
+#hambur-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 10px 18px;
+}
+
+#hambur-btn:hover {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#logo {
+    width: 130px;
+    height: 100%;
+    padding: 5px 0px;
+}
+
+/* nav2 */
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+
+    display: flex;
+}
+
+.nav2-fd > div {
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    width: 500px;
+    height: 35px;
+
+    display: flex; 
+}
+
+.nav2-fd-div1 {
+    width: 90%;
+    border: none;
+}
+
+#search {
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    padding: 6px 25px; 
+    background-color: transparent;
+}
+
+#search:focus {
+    outline: none;
+}
+
+.nav2-fd-div2 {
+    width: 10%;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+#serach-btn {
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+#mic-btn {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #ddd;
+    margin-left: 15px;
+}
+
+#mic-btn:hover {
+    background-color: darkgrey;
+}
+
+/* nav3 */
+.nav3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav3 > button {
+    font-size: 18px;
+    margin: 0px 10px;
+    border: none;
+    background-color: transparent;
+}
+
+/* main */
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    padding: 10px 80px;
+}
+
+/* main left */
+.main1 {
+    flex-basis: 70%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main1 > .top {
+    width: 100%;
+    height: 600px;
+}
+
+.main1 > .center {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.center > .center-t {
+    flex-basis: 20%;
+
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.center > .center-c {
+    flex-basis: 30%;
+
+    display: flex;
+    align-items: center;
+}
+
+.center-c1 {
+    flex-basis: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper1 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+
+    /* overflow : 흘러넘친 부분 숨기기*/
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ch-prof {
+    height: 100%;
+}
+
+.center-c2 {
+    flex-basis: 10%;
+}
+
+.center-c2 > span:nth-child(1) {
+    font-size: 17px;
+}
+
+.center-c2 > span:nth-child(2) {
+    font-size: 13px;
+    color: gray;
+}
+
+.center-c3 {
+    flex-basis: 35%;
+}
+
+.center-c3 > div {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #ddd;
+    width: 170px;
+    height: 30px;
+    padding: 2px 7px;
+}
+
+.center-c3 > div > button {
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.center-c4 {
+    flex-basis: 50%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center-c4 > div {
+    margin: 0 5px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #ddd;
+    padding: 2px 9px;
+}
+
+.center-c4 button {
+    border: none;
+    background-color: transparent;
+    font-size: 10px;
+}
+
+.center > .center-b {
+    flex-basis: 50%;
+
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #ddd;
+    padding: 5px 8px;
+}
+
+.main1 > .bottom {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main1 > .bottom > div:nth-child(1) {
+    flex-basis: 15%;
+
+    display: flex;
+    align-items: center;
+}
+
+.bottom-t-l {
+    flex-basis: 15%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bottom-t-r {
+    flex-basis: 85%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bottom-t-r > button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.main1 > .bottom > div:nth-child(2) {
+    flex-basis: 25%;
+
+    display: flex;
+}
+
+.bottom-c-l {
+    flex-basis: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bomttom-c-r {
+    flex-basis: 95%;
+}
+
+.bottom-c-r > p {
+    color: gray;
+    padding: 0px 10px;
+}
+
+.img-wrapper2 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    
+    overflow: hidden;
+
+    display: flex;
+}
+
+.img-wrapper2 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.main1 > .bottom > div:nth-child(3) {
+    flex-basis: 60%;
+
+    display: flex;
+}
+
+.bottom-b-l {
+    flex-basis: 5%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper3 {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+
+.img-wrapper3 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-b-r {
+    flex-basis: 95%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-b-r > .t {
+    flex-basis: 20%;
+}
+
+.bottom-b-r > .c {
+    flex-basis: 50%;
+}
+
+.bottom-b-r > .b {
+    flex-basis: 30%;
+}
+
+.bottom-b-r > .t,
+.bottom-b-r > .c,
+.bottom-b-r > .b {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.bottom-b-r > .b > button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin: 0px 5px;
+}
+
+.bottom-b-r > .b > button:hover {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #ddd;
+    cursor: pointer;
+
+    height: 30px;
+}
+
+.bottom-b-r > .b > button:nth-child(3) {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* main right */
+.main2 {
+    flex-basis: 30%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 15px;
+}
+
+.main2 > div:nth-child(1) {
+    flex-basis: 15%;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.main2-top-t {
+    flex-basis: 40%;
+}
+
+.main2-top-b {
+    flex-basis: 60%;
+
+    display: flex;
+    align-items: center;
+}
+
+.main2-top-t > img {
+    width: 100%;
+    height: 100%;
+}
+
+.main2-top-b > div:nth-child(1) {
+    flex-basis: 15%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main2-top-b > div:nth-child(2) {
+    flex-basis: 60%;
+}
+
+.main2-top-b > div:nth-child(3) {
+    flex-basis: 25%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper4 {
+    width: 50px;
+    height: 50px;
+    border: none;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper4 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.main2-top-b > div:nth-child(3) > button {
+    border: 1px solid blue;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+}
+
+.main2 > div:nth-child(2) {
+    flex-basis: 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.main2 > div:nth-child(2) > div {
+    border: 1px solid #ddd;
+    border-radius: 10%;
+    background-color: #ddd;
+    height: 30px;
+    font-size: 17px;
+    margin: 0px 5px;
+    padding: 0px 10px;
+}
+
+#first-black {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.main2 > div:nth-child(2) > button {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: darkgray;
+}
+
+.main2 > div:nth-child(2) > button:hover {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background-color: #ddd;
+}
+
+.main2 > div:nth-child(3) {
+    flex-basis: 77%;
+}
+
+.main2 > div:nth-child(3) > div {
+    width: 100%;
+    height: calc(100%/11);
+
+    display: flex;
+}
+
+.if1-l,
+.if2-l,
+.if3-l,
+.if4-l,
+.if5-l,
+.if6-l,
+.if7-l,
+.if8-l,
+.if9-l,
+.if10-l,
+.if11-l {
+    width: 40%;
+    height: 100%;
+}
+
+.if1-r,
+.if2-r,
+.if3-r,
+.if4-r,
+.if5-r,
+.if6-r,
+.if7-r,
+.if8-r,
+.if9-r,
+.if10-r,
+.if11-r {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+
+    font-size: 15px;
+}
+
+.if1-r > div:nth-child(1),
+.if2-r > div:nth-child(1),
+.if3-r > div:nth-child(1),
+.if4-r > div:nth-child(1),
+.if5-r > div:nth-child(1),
+.if6-r > div:nth-child(1),
+.if7-r > div:nth-child(1),
+.if8-r > div:nth-child(1),
+.if9-r > div:nth-child(1),
+.if10-r > div:nth-child(1),
+.if11-r > div:nth-child(1) {
+    flex-basis: 50%;
+}
+
+.if1-r > div:nth-child(2),
+.if2-r > div:nth-child(2),
+.if3-r > div:nth-child(2),
+.if4-r > div:nth-child(2),
+.if5-r > div:nth-child(2),
+.if6-r > div:nth-child(2),
+.if7-r > div:nth-child(2),
+.if8-r > div:nth-child(2),
+.if9-r > div:nth-child(2),
+.if10-r > div:nth-child(2),
+.if11-r > div:nth-child(2) {
+    flex-basis: 50%;
+    font-size: 13px;
+    color: gray;
+}
+
+.main2 > div > div {
+    margin-bottom: 7px;
+}
+
+/* 반응형 모바일 기준 */
+/* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용해라 */
+@media all and (max-width:767px) {
+
+    main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    nav > section:nth-of-type(2),
+    nav > section:nth-of-type(3) {
+        display: none;
+    }
+
+    nav > section:nth-of-type(1) {
+        padding-left: 10px;
+    }
+    
+    #logo {
+        width: 100px;
+    }
+
+    .center-c4 > div {
+        display: none;
+    }
+
+    .bottom-t-l,
+    .bottom-t-r {
+        display: none;
+    }
+}
+
+

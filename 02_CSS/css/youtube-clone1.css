@@ -706,7 +706,17 @@ main > section:nth-child(2) {
 /* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용해라 */
 @media all and (max-width:767px) {
 
+    .main-section {
+        flex-direction: column;
+        padding: 0;
+    }
+    
     main {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .main2-left {
         flex-direction: column;
         padding: 0;
     }
