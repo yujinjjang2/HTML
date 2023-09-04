@@ -90,7 +90,7 @@ function typeTest() {
     typeBox.innerHTML += "<br>user.id : " + user.id;
     typeBox.innerHTML += "<br>user.pw : " + user.pw;
 
-    // 객체 내용 출력 방법 1 (객체 전용 for문 for..in)
+    // 객체 내용 출력 방법 2 (객체 전용 for문 for..in)
     for(let key in user) {
         // user 객체의 키(id, pw)를 반복할 때 마다 하나씩 얻어와 key 변수에 저장
         typeBox.innerHTML += "<br>user[key] : " + user[key];

@@ -5,7 +5,7 @@ function accessId() {
 
     // 접근한 요소의 배경색 얻어오기
     const bgColor = div1.style.backgroundColor;
-
+    
     /**** 자바스크립트는 문자열 비교시에도 비교연산자(==) 사용한다 ! (equals 사용 X) ****/
     if( bgColor == "red" ) {
         div1.style.backgroundColor = "yellow";
@@ -99,7 +99,7 @@ function readValue() {
     const bg = document.getElementById("chatting-bg");
 
     const input = document.querySelector("#chatting-input");
-
+  
     // input에 입력된 값이 있는 경우
     if( input.value.trim().length > 0 ) {
 

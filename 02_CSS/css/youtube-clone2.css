@@ -249,6 +249,10 @@ main {
     padding: 2px 9px;
 }
 
+.center-c4 > div > strong {
+    font-size: 12px;
+}
+
 .center-c4 button {
     border: none;
     background-color: transparent;
