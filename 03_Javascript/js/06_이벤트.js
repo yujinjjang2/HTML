@@ -66,6 +66,10 @@ document.getElementById("test2-3").onclick = function() {
 
 */
 
+// function test3(div) {
+//     div.style.backgroundColor = 'tomato';
+// }
+
 document.getElementById("test3").addEventListener("click", function() {
 
     console.log(this.clientWidth); // 현재 요소의 너비(테두리 제외) // 200
@@ -84,23 +88,23 @@ document.getElementById("test3").addEventListener("click", function() {
 
 // 복습문제
 // 내풀이
-// document.getElementById("changeBtn1").addEventListener("click", function() {
+document.getElementById("changeBtn1").addEventListener("click", function() {
 
-//     const input = document.getElementById("input1").value;
+    const input = document.getElementById("input1").value;
 
-//     if(input == 'red') {
-//         document.getElementById("div1").style.backgroundColor = 'red';
-//     } else if(input == 'yellow') {
-//         document.getElementById("div1").style.backgroundColor = 'yellow';
-//     } else if(input == 'pink') {
-//         document.getElementById("div1").style.backgroundColor = 'pink';
-//     }
+    if(input == "") {
+        alert("색상을 영어로 입력해주세요");
+    }
+    document.getElementById("div1").style.backgroundColor = input;
+    // if(input == 'red') {
+    //     document.getElementById("div1").style.backgroundColor = 'red';
+    // } else if(input == 'yellow') {
+    //     document.getElementById("div1").style.backgroundColor = 'yellow';
+    // } else if(input == 'pink') {
+    //     document.getElementById("div1").style.backgroundColor = 'pink';
+    // }
 
-//     if(input == "") {
-//         alert("색상을 영어로 입력해주세요");
-//     }
-
-// });
+});
 
 // 강사님 풀이
 document.getElementById("changeBtn1").addEventListener("click", function(){
@@ -144,7 +148,7 @@ document.getElementById("moveNaver").addEventListener("click", function(e) {
 
     // 매개변수 e 또는 event == 이벤트 발생 객체
     // 이벤트와 관련된 정보가 담겨있는 객체
-
+    
     e.preventDefault(); // HTML 요소가 가지고있는 기본 이벤트를 막음(제거) // 자주 사용!
 
 });
