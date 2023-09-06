@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'omyu_pretty';
+}
+
+section, div {
+    border: 1px solid black;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+}
+
+body > section {
+    display: flex;
+    flex-direction: column;
+
+    width: 1440px;
+    height: 350vh;
+}
+
+body > section > section:nth-child(1),
+body > section > section:nth-child(2),
+body > section > section:nth-child(4) {
+    width: 100%;
+    height: 22%;
+}
+
+body > section > section:nth-child(3) {
+    width: 100%;
+    height: 34%;
+}
+
+/* 1 */
+.one {
+    background-image: url("../images/portfolio/background.png");
+    display: flex;
+    flex-direction: column;
+}
+
+.one > div:nth-child(1) {
+    flex-basis: 20%;
+
+    display: flex;
+}
+
+.one > div:nth-child(1) > div:nth-child(1) {
+    flex-basis: 70%;
+}   
+
+.one > div:nth-child(1) > div:nth-child(2) {
+    flex-basis: 30%;
+}   
+
+.one1-l {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.one1-l > a > button {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.one1-l > a > button:hover {
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    background-color: darkgray;
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+}
+
+.one1-r {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.one1-r > a > button {
+    border: none;
+    background-color: transparent;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.one1-r > a > button:hover {
+    border: 1px solid darkgray;
+    border-radius: 50px;
+    background-color: darkgray;
+    width: 70px;
+    height: 70px;
+}
+
+.one > div:nth-child(2) {
+    flex-basis: 80%;
+
+    display: flex;
+}
+
+.one > div:nth-child(2) > div {
+    flex-basis: 50%;
+}
+
+.one > div:nth-child(2) > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#profile {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.one > div:nth-child(2) > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.one1-b-r1 {
+    flex-basis: 70%;
+    font-size: 30px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.one1-b-r2 {
+    flex-basis: 30%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#resume-btn {
+    width: 150px;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px 20px;
+    font-size: 15px;
+}
+
+#resume-btn:hover {
+    background-color: darkgray;
+    color: black;
+    font-size: 15px;
+}
+
+/* 2 */
+.two {
+    display: flex;
+    flex-direction: column;
+}
+
+.two > div:nth-child(1) {
+    flex-basis: 20%;
+}
+
+.two > div:nth-child(2) {
+    flex-basis: 10%;
+}
+
+.two > div:nth-child(3) {
+    flex-basis: 50%;
+}
+
+.two > div:nth-child(4) {
+    flex-basis: 20%;
+}
+
+.two > div:nth-child(1) {
+    font-size: 50px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.two > div:nth-child(2) {
+    font-size: 30px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two > div:nth-child(3) {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two > div:nth-child(4) {
+    display: flex;
+}
+
+.two > div:nth-child(4) > div:nth-child(1),
+.two > div:nth-child(4) > div:nth-child(3) {
+    flex-basis: 20%;
+}
+
+.two > div:nth-child(4) > div:nth-child(2) {
+    flex-basis: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hire-btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#hire-btn:hover {
+    background-color: darkgray;
+    color: balck;
+    font-size: 25px;
+}
+
+.two > div:nth-child(4) > div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#up-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 80px;
+    color: gray;
+}
+
+#up-btn:hover {
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 50px;
+    background-color: rgb(48, 47, 47);
+}
+
+/* 3 */
+.three {
+    display: flex;
+    flex-direction: column;
+}
+
+.three > div:nth-child(1),
+.three > div:nth-child(4) {
+    flex-basis: 10%;
+}
+
+.three > div:nth-child(2),
+.three > div:nth-child(3) {
+    flex-basis: 40%;
+}
+
+.three > div:nth-child(1) {
+    font-size: 50px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+.three > div:nth-child(2),
+.three > div:nth-child(3) {
+    display: flex;
+}
+
+.three > div:nth-child(2) > div,
+.three > div:nth-child(3) > div {
+    flex-basis: 50%;
+}
+
+#youtube {
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+}
+
+#youtube:hover {
+    cursor: pointer;
+}
+
+.three2-r {
+    display: flex;
+    flex-direction: column;
+}
+
+.three2-r > div:nth-child(1) {
+    flex-basis: 50%;
+
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.three2-r > div:nth-child(1):hover {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.three2-r > div:nth-child(2),
+.three2-r > div:nth-child(3) {
+    flex-basis: 25%;
+}
+
+.three2-r > div:nth-child(2) {
+    font-size: 30px;
+}
+
+.three2-r > div:nth-child(3) {
+    font-size: 25px;
+}
+
+.three2-r > div:nth-child(3) > a {
+    color: black;
+}
+
+.three2-r > div:nth-child(3) > a:hover {
+    border: 1px solid rgb(66, 61, 61);
+    border-radius: 10px;
+    background-color: rgb(66, 61, 61);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 추가 속성 */
+button:hover {
+    cursor: pointer;
+}

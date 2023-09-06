@@ -12,17 +12,17 @@
 <body>
     <section>
         <!-- 1 -->
-        <section class="first">
+        <section class="first" id="top-location">
             <div>
                 <div class="top-l">
-                    <button>Home</button>
-                    <button>About</button>
-                    <button>Propjects</button>
-                    <button>Contact</button>
+                    <a href="#"><button>Home</button></a>
+                    <a href="#second"><button>About</button><a>
+                    <a href="#third"><button>Propjects</button></a>
+                    <a href="#four"><button>Contact</button></a>
                 </div>
                 <div class="top-r">
-                    <button class="fa-brands fa-github"></button>
-                    <button class="fa-solid fa-file-pen"></button>
+                    <a href="https://github.com/yujinjjang2" target="_blank"><button class="fa-brands fa-github"></button></a>
+                    <a href="https://velog.io/@o3odw98" target="_blank"><button class="fa-solid fa-file-pen"></button></a>
                 </div>
             </div>
 
@@ -39,14 +39,14 @@
                         A Multi talented sotfware developer
                     </div>
                     <div>
-                        <button>Download My Resume</button>
+                        <a href="#" target="_blank"><button>Download My Resume</button></a>
                     </div>
                </div> 
             </div>
         </section>
 
         <!-- 2 -->
-        <section class="second">
+        <section class="second" id="second">
             <div>
                 <div>About</div>
                 <div>안녕하세요, 예비 개발자를 꿈꾸는 이유진입니다!</div>
@@ -63,16 +63,16 @@
 
             <div>
                 <div>
-                    <button id="second-btn1">Hire Me</button>
+                    <a href="#" target="_blank"><button id="second-btn1">Hire Me</button></a>
                 </div>
                 <div>
-                    <button id="second-btn2" class="fa-solid fa-angles-up"></button>
+                    <a href="#top-location"><button id="second-btn2" class="fa-solid fa-angles-up"></button></a>
                 </div>
             </div>
         </section>
 
         <!-- 3 -->
-        <section class="third">
+        <section class="third" id="third">
             <div>
                 Projects
             </div>
@@ -111,14 +111,43 @@
                 </div>
             </div>
 
-            <div>
+            <div class="third-4">
                 <div></div>
-                <div></div>
+                <div>
+                    <u>View All Projects...</u>
+                </div>
+                <div>
+                    <a href="#top-location"><button id="third-btn" class="fa-solid fa-angles-up"></button></a>
+                </div>
             </div>
         </section>
 
         <!-- 4 -->
-        <section class="four"></section>
+        <section class="four" id="four">
+            <div>
+                Contact Me
+            </div>
+
+            <div>
+                채용을 원하시면 바로 연락드리겠습니다.
+            </div>
+
+            <div>
+                <div></div>
+                <div>
+                    <form action="#" class="contact-form">
+                        <input type="text" placeholder="Name" name="name" id="name">
+                        <input type="text" placeholder="Email" name="email" id="email">
+                        <input type="text" placeholder="Body" name="body" id="body">
+
+                        <button type="submit" id="four-btn">Send</button>
+                    </form>
+                </div>
+                <div>
+                    <a href="#top-location"><button id="third-btn" class="fa-solid fa-angles-up"></button></a>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 </html>
