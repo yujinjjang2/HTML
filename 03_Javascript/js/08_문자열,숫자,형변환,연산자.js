@@ -24,6 +24,7 @@ document.getElementById("btn1").addEventListener("click", function() {
     const str3 = "햄버거, 피자, 김밥, 파스타, 삼겹살";
     const arr = str3.split(", "); // 띄어쓰기까지 포함한 것 -> 구분자!
     console.log(arr); // ['햄버거', '피자', '김밥', '파스타', '삼겹살']
+    // console.log(arr[0]);
 });
 
 // 숫자 관련 함수
@@ -69,6 +70,9 @@ document.getElementById("btn2").addEventListener("click", function() {
     const g = Math.floor(Math.random() * 256)  // 0~255
     const b = Math.floor(Math.random() * 256)  // 0~255
 
+    console.log(r);
+    console.log(g);
+    console.log(b);
     this.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")"
 
     // 숫자.toFixed(자릿수) : 지정된 자릿수 까지 반올림해서 표현
@@ -82,6 +86,7 @@ document.getElementById("btn2").addEventListener("click", function() {
 // parseInt() : 정수로 변환함 ("3.14" -> 3)
 console.log( parseInt("3.14") ); // 3
 console.log( typeof parseInt("3.14") ); // number
+// console.log( typeof "3.14" ); // string
 
 // parseFloat() : "정수" -> 정수, "실수" -> 실수
 console.log( parseFloat("3.14") ); // 3.14

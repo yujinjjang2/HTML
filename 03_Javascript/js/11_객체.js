@@ -39,10 +39,18 @@ document.getElementById("btn1").addEventListener("click", function() {
     div1.innerHTML += "product.color : " + product.color + "<br>"; // product.color : white,black,silver
     div1.innerHTML += "product.price : " + product.price + "<br>"; // product.price : 35000
 
+    // function mix1(){
+    //     console.log("test");
+    // }    
 
+    // mix2 = function() {
+    //     console.log("test2");
+    // }
     // 객체 메서드 호출
     product.mix();
     product.information();
+    // mix1();
+    // mix2();
 
 });
 

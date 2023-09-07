@@ -23,6 +23,9 @@ document.getElementById("btn1").addEventListener("click", function() {
 
     // for문으로 배열 요소 반복 접근하기
     // 1. 일반 for문
+    for(let i = 0; i < arr4.length; i++) {
+        console.log(arr4[i]);
+    }
     // 2. 향상된 for문 (for...of) : 배열용 향상된 for문
     for(let item of arr4) {
         console.log(item);

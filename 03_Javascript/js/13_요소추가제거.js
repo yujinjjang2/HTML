@@ -32,7 +32,7 @@ document.getElementById("add").addEventListener("click", function() {
     div.append(span);
     // <div class="row">
     //    <input class="in">
-    //    <span class="remove"></span>
+    //    <span class="remove">X</span>
     // </div>
 
 
