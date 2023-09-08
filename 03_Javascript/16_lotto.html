@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_lotto</title>
+
+    <style>
+        /* div {
+            border: 1px solid black;
+        } */
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        body > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 500px;
+            height: 200px;
+        }
+
+        body > div > div {
+            flex-basis: calc(100%/3);
+        }
+
+        body > div > div:nth-child(2) {
+            display: flex;
+            justify-content: center;
+        }
+
+        body > div > div:nth-child(2) > button {
+            width: 60px;
+            height: 60px;
+            margin: 0px 10px;
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        body > div > div:nth-child(3) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body > div > div:nth-child(3) > button {
+            width: 300px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div></div>
+        <div id="lotto_cir">
+            <button class="num">0</button>
+            <button class="num">0</button>
+            <button class="num">0</button>
+            <button class="num">0</button>
+            <button class="num">0</button>
+            <button class="num">0</button>
+        </div>
+        <div>
+            <button id="lotto-btn">로또 번호 생성</button>
+        </div>
+    </div>
+
+    <script src="js/16_lotto.js"></script>
+</body>
+</html>
