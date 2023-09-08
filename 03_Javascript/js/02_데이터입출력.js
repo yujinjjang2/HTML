@@ -30,7 +30,7 @@ function getInnerHTML1() {
 function setInnerHTML1() {
     const test2 = document.getElementById("test2");
 
-    test2.innerHTML= "<b>innerHTML로 변경된 내용</b> <br> 안녕하세요";
+    test2.innerHTML = "<b>innerHTML로 변경된 내용</b> <br> 안녕하세요";
 }
 
 // innerHTML 응용

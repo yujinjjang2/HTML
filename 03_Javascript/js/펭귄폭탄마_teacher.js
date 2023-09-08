@@ -4,6 +4,7 @@ let yindex = 0;
 document.addEventListener("keydown", function(e) {
 
     console.log("누르는중" + e.key);
+    // console.log("누르는중" + e.keyCode);
 
     const peng = document.getElementById("peng");
     const boom = document.createElement("img");
