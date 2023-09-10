@@ -26,7 +26,7 @@ document.getElementById("add").addEventListener("click", function() {
 
     span.innerText = "X";
 
-    // <span class="remove"></span>
+    // <span class="remove">X</span>
 
     div.append(input);
     div.append(span);

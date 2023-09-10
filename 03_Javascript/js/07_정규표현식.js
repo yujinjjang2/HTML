@@ -114,7 +114,7 @@ document.getElementById("inputPno").addEventListener("keyup", function() {
         span.innerText = "유효하지 않습니다."
 
         span.classList.remove("confirm");
-        span.classList.add.apply("error");
+        span.classList.add("error");
     }
 
 });

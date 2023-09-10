@@ -20,6 +20,7 @@
             padding: 20px;
             font-size: 30px;
             text-align: center;
+            margin: 0px 10px;
         }
 
         #createLotto {
@@ -64,7 +65,7 @@
 
             // lotto에 저장된 난수 오름차순 정렬
             lotto.sort( function(a,b) { return a-b; } );
-
+            // alert(lotto.toString());
             // numbers의 인덱스별로 lotto 인덱스에 저장된 값 출력
             for(let i = 0; i < lotto.length; i++) {
                 numbers[i].innerText = lotto[i];

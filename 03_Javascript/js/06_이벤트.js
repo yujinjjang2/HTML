@@ -48,8 +48,10 @@ document.getElementById("test2-3").onclick = function(event) {
     // 해당 이벤트와 관련된 모든 정보가 담긴 이벤트 객체가 반환된다.
     console.log(event);
 
+    
+
     // event.target : 이벤트가 발생한 요소
-    // event.target.style.backgroundColor = "pink";
+    event.target.style.backgroundColor = "pink";
 
     // 방법 3) this 활용하기 -> 이벤트가 발생한 요소
     this.style.backgroundColor = "pink";

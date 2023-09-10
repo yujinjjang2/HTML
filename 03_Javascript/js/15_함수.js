@@ -26,7 +26,7 @@ test1(); // 호출
 // 화살표 함수(Arrow Function)
 
 // 1. 기본형태 : () => {}
-document.getElementById("btn2-1").addEventListener("click", () => {
+document.getElementById("btn2-1").addEventListener("click",() => {
     alert("화살표 함수 기본 형태입니다"); // alert창에 화살표 함수 기본 형태입니다 내용 뜸.
 });
 
@@ -39,7 +39,7 @@ document.getElementById("btn2-2").addEventListener("click", e => {
 document.getElementById("btn2-3").addEventListener("click", () => {
 
     // 익명 함수
-    printConsole(  function(num) {return num * 10}  )
+    printConsole(  function(num) {return num * 10}  );
 
     // 화살표 함수
     printConsole( num => num * 5 );

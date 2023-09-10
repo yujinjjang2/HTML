@@ -47,7 +47,7 @@ function typeTest() {
 
     let temp; // 선언 후 값을 초기화하지 않음 == undefiend
     typeBox.innerHTML = "temp : " + temp;
-
+    // console.log(typeBox.innerHTML);
     const name = "홍길동";
 
     // typeof 변수명 : 해당 변수의 자료형을 검사하는 연산자
@@ -103,6 +103,9 @@ function typeTest() {
     const sumFn = function(n1,n2) { // 익명함수
         return n1 + n2;
     }
+    // function sumFn(n1, n2) {
+    //     return n1 + n2;
+    // }
 
     // 함수명만 작성한 경우 -> 함수에 작성된 코드가 출력됨
     typeBox.innerHTML += "<br>sumFn : " + sumFn + " / " + typeof sumFn;
