@@ -12,11 +12,6 @@
     font-family: 'GowunDodum-Regular';
 }
 
-/* 섹션 나누는 줄 */
-/* div, section {
-    border: 1px solid black;
-} */
-
 body {
     margin: 0px;
     padding: 0px;
@@ -29,36 +24,46 @@ body > section {
     height: 1800px;
 }
 
-/* 공지사항 대제목 */
+/* top(상단 공백 영역) */
 #top {
-    flex-basis: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-weight: bold;
+    flex-basis: 9%;
 }
 
 #content {
-    flex-basis: 80%;
+    flex-basis: 83%;
     display: flex;
+}
+
+/* bottom(하단 공백 영역) */
+#bottom {
+    flex-basis: 8%;
 }
 
 /* content:left(왼쪽 공백 영역), right(오른쪽 공백 영역) */
 #l_blank, #r_blank {
-    flex-basis: 10%;
+    flex-basis: 20%;
 }
 
 /* main(공지사항 세부 내용 영역) */
 #main {
-    flex-basis: 80%;
+    flex-basis: 60%;
     display: flex;
     flex-direction: column;
 }
 
+/* 공지사항 대제목 */
+#subject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
 /* 공지사항 세부 내용 영역(위) */
 #main-t {
-    flex-basis: 15%;
+    flex-basis: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -74,20 +79,20 @@ body > section {
     flex-basis: 60%;
     background-color: #ddd;
     border-radius: 10px;
-    font-size: 28px;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     padding-left: 20px;
     margin: 5px 0px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* 공지사항 세부 내용 영역(센터) */
 #main-c {
-    flex-basis: 60%;
+    flex-basis: 70%;
     background-color: #ddd;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 1.1rem;
     display: flex;
     padding: 50px;
     margin: 80px 0px;
@@ -95,7 +100,7 @@ body > section {
 
 /* 공지사항 세부 내용 영역(아래) */
 #main-b {
-    flex-basis: 25%;
+    flex-basis: 20%;
     display: flex;
     flex-direction: column;
 }
@@ -121,15 +126,15 @@ body > section {
     border: #ddd;
     border-radius: 10px;
     background-color: #ddd;
-    font-size: 20px; 
-    margin-bottom: 13px;
+    font-size: 0.9rem; 
+    margin-bottom: 3px;
 }
 
 /* 이전 글 */
 #pre-tit {
     flex-basis: 50%;
     display: flex;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(192, 192, 192);
 }
 
 /* 이전 글 왼쪽 */
@@ -169,6 +174,42 @@ body > section {
 /* 공지사항 세부 내용 영역(아래): 2번째(공백) */
 #main-b2 {
     flex-basis: 45%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 수정 버튼 */
+#upd-btn {
+    border: none;
+    border-radius: 10%;
+    background-color: #ddd;
+    width: 70px;
+    height: 33px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#upd-btn:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+/* 삭제 버튼 */
+#del-btn {
+    border: none;
+    border-radius: 10%;
+    background-color: #F98C8C;
+    width: 70px;
+    height: 33px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#del-btn:hover {
+    cursor: pointer;
+    background-color: #f66262;
 }
 
 
